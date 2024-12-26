@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/hamza/from-0/ML-DL-From-Scratch/build",
+  "command": "/usr/bin/g++  -I/home/hamza/from-0/ML-DL-From-Scratch/lmath/include -g -std=gnu++11 -o CMakeFiles/lmath.dir/src/Matrix.cpp.o -c /home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp",
+  "file": "/home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp",
+  "output": "CMakeFiles/lmath.dir/src/Matrix.cpp.o"
+}
+]

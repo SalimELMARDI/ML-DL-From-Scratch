@@ -11,6 +11,3 @@ include_directories(include)
 # Add the library target
 add_library(lmath src/Matrix.cpp)
 
-# Optional: Add an executable for testing
-add_executable(test_lmath tests/test.cpp)
-target_link_libraries(test_lmath lmath)

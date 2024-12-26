@@ -12,7 +12,9 @@ namespace lmath {
         Matrix(std::vector<std::vector<double>>& Grid);
         Matrix(std::vector<double> Grid);
 
-        double& operator()(size_t i, size_t j);
+        double& operator()(size_t i, size_t j);              // Non-const version (modifies matrix)
+        const double& operator()(size_t i, size_t j) const; // Const version (read-only)
+
         Matrix operator*(Matrix& other);
 
         size_t getRows() const { return rows; }

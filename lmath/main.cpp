@@ -1,15 +1,13 @@
-#include "Matrix.hpp"
+#include "include/lmath.hpp"
+#include "include/Matrix.hpp"
 
-#include "lmath.hpp"
 #include <iostream>
 
 
 using namespace std;
-using namespace lmath;
 
 
-
-Matrix get_ones(size_t n,size_t m=0)
+lmath::Matrix get_ones(size_t n,size_t m=0)
 {
         if(m==0)
         {
@@ -21,12 +19,12 @@ Matrix get_ones(size_t n,size_t m=0)
 }
 
 int main() {
-    Matrix A=get_ones(5);
-    Matrix B=get_ones(5);
+    lmath::Matrix  A=get_ones(5);
+    lmath::Matrix  B=get_ones(5);
     
     cout<<A*B<<endl;
     
-    Matrix C({1,2,3,4});
+    lmath::Matrix C({1,2,3,4});
     cout<<C<<endl;
     return 0;
 }

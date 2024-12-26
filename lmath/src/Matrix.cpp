@@ -40,9 +40,7 @@ namespace lmath {
         return result;
     }
 
-} // namespace lmath
-
-std::ostream& operator<<(std::ostream& os, const lmath::Matrix& M) {
+    std::ostream& operator<<(std::ostream& os, const lmath::Matrix& M)  {
     os << "Matrix: [\n";
     for (size_t i = 0; i < M.getRows(); i++) {
         os << "[";
@@ -54,3 +52,6 @@ std::ostream& operator<<(std::ostream& os, const lmath::Matrix& M) {
     os << "]";
     return os;
 }
+
+} // namespace lmath
+
