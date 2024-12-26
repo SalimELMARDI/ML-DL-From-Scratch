@@ -1,3 +1,0 @@
-/home/hamza/from-0/ML-DL-From-Scratch/build/CMakeFiles/lmath.dir
-/home/hamza/from-0/ML-DL-From-Scratch/build/CMakeFiles/edit_cache.dir
-/home/hamza/from-0/ML-DL-From-Scratch/build/CMakeFiles/rebuild_cache.dir

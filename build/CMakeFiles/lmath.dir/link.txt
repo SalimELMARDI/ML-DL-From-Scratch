@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblmath.a CMakeFiles/lmath.dir/src/Matrix.cpp.o
-/usr/bin/ranlib liblmath.a
