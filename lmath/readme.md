@@ -1,11 +1,3 @@
-### Plan for Library Organization
-
-1. Create separate header files for each class
-2. Create a main header file that includes all components
-3. Organize source files similarly
-4. Update build system
-
-### Directory Structure
 ```
 include/lmath/
 ├── lmath.hpp      (main header)
