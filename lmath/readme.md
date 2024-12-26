@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-### compile and execution 
+### compilation and execution 
 #### with cmake 
 
 create a file named CMaleLists.txt inside your project root directory and add this text
