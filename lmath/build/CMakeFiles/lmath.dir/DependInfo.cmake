@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp" "CMakeFiles/lmath.dir/src/Matrix.cpp.o" "gcc" "CMakeFiles/lmath.dir/src/Matrix.cpp.o.d"
+  "/home/hamza/Desktop/packages/prjct/src/lmath.cpp" "CMakeFiles/lmath.dir/src/lmath.cpp.o" "gcc" "CMakeFiles/lmath.dir/src/lmath.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

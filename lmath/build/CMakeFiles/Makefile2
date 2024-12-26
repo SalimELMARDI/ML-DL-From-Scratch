@@ -54,16 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath
+CMAKE_SOURCE_DIR = /home/hamza/Desktop/packages/prjct
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath/build
+CMAKE_BINARY_DIR = /home/hamza/Desktop/packages/prjct/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/lmath.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lmath.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,14 +83,14 @@ clean: CMakeFiles/lmath.dir/clean
 CMakeFiles/lmath.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles --progress-num=1,2 "Built target lmath"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hamza/Desktop/packages/prjct/build/CMakeFiles --progress-num=1,2 "Built target lmath"
 .PHONY : CMakeFiles/lmath.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lmath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lmath.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles 0
 .PHONY : CMakeFiles/lmath.dir/rule
 
 # Convenience name for target.
@@ -99,6 +101,32 @@ lmath: CMakeFiles/lmath.dir/rule
 CMakeFiles/lmath.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/clean
 .PHONY : CMakeFiles/lmath.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all: CMakeFiles/lmath.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hamza/Desktop/packages/prjct/build/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

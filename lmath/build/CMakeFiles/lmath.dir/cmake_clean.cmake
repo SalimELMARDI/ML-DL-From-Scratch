@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lmath.dir/src/Matrix.cpp.o"
-  "CMakeFiles/lmath.dir/src/Matrix.cpp.o.d"
+  "CMakeFiles/lmath.dir/src/lmath.cpp.o"
+  "CMakeFiles/lmath.dir/src/lmath.cpp.o.d"
   "liblmath.a"
   "liblmath.pdb"
 )

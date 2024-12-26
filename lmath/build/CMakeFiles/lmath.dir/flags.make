@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hamza/from-0/ML-DL-From-Scratch/lmath/include
+CXX_INCLUDES = -I/home/hamza/Desktop/packages/prjct/include
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -std=gnu++17 -fopenmp
 

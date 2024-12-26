@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath
+CMAKE_SOURCE_DIR = /home/hamza/Desktop/packages/prjct
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath/build
+CMAKE_BINARY_DIR = /home/hamza/Desktop/packages/prjct/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles /home/hamza/from-0/ML-DL-From-Scratch/lmath/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles /home/hamza/Desktop/packages/prjct/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamza/Desktop/packages/prjct/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,66 @@ lmath/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/build
 .PHONY : lmath/fast
 
-src/Matrix.o: src/Matrix.cpp.o
-.PHONY : src/Matrix.o
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/Matrix.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/Matrix.cpp.o
-.PHONY : src/Matrix.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/Matrix.i: src/Matrix.cpp.i
-.PHONY : src/Matrix.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/Matrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/Matrix.cpp.i
-.PHONY : src/Matrix.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/Matrix.s: src/Matrix.cpp.s
-.PHONY : src/Matrix.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/Matrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/Matrix.cpp.s
-.PHONY : src/Matrix.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/lmath.o: src/lmath.cpp.o
+.PHONY : src/lmath.o
+
+# target to build an object file
+src/lmath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/lmath.cpp.o
+.PHONY : src/lmath.cpp.o
+
+src/lmath.i: src/lmath.cpp.i
+.PHONY : src/lmath.i
+
+# target to preprocess a source file
+src/lmath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/lmath.cpp.i
+.PHONY : src/lmath.cpp.i
+
+src/lmath.s: src/lmath.cpp.s
+.PHONY : src/lmath.s
+
+# target to generate assembly for a file
+src/lmath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lmath.dir/build.make CMakeFiles/lmath.dir/src/lmath.cpp.s
+.PHONY : src/lmath.cpp.s
 
 # Help Target
 help:
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lmath"
-	@echo "... src/Matrix.o"
-	@echo "... src/Matrix.i"
-	@echo "... src/Matrix.s"
+	@echo "... main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/lmath.o"
+	@echo "... src/lmath.i"
+	@echo "... src/lmath.s"
 .PHONY : help
 
 

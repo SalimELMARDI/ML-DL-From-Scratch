@@ -1,13 +1,23 @@
 cmake_minimum_required(VERSION 3.10)
 project(lmath)
 
-# Specify the C++ standard
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_STANDARD 17)
+find_package(OpenMP REQUIRED)
 
-# Include directories
-include_directories(include)
+# Create library
+add_library(lmath STATIC
+    src/lmath.cpp
+    #add all the source files
+)
 
-# Add the library target
-add_library(lmath src/Matrix.cpp)
+# Setup include directories
+target_include_directories(lmath PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 
+# Link OpenMP
+target_link_libraries(lmath PUBLIC OpenMP::OpenMP_CXX)
+
+# Create executable
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE lmath)

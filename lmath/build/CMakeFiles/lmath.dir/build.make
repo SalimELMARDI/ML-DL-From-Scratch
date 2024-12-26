@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath
+CMAKE_SOURCE_DIR = /home/hamza/Desktop/packages/prjct
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamza/from-0/ML-DL-From-Scratch/lmath/build
+CMAKE_BINARY_DIR = /home/hamza/Desktop/packages/prjct/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lmath.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/lmath.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lmath.dir/flags.make
 
-CMakeFiles/lmath.dir/src/Matrix.cpp.o: CMakeFiles/lmath.dir/flags.make
-CMakeFiles/lmath.dir/src/Matrix.cpp.o: /home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp
-CMakeFiles/lmath.dir/src/Matrix.cpp.o: CMakeFiles/lmath.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lmath.dir/src/Matrix.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lmath.dir/src/Matrix.cpp.o -MF CMakeFiles/lmath.dir/src/Matrix.cpp.o.d -o CMakeFiles/lmath.dir/src/Matrix.cpp.o -c /home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp
+CMakeFiles/lmath.dir/src/lmath.cpp.o: CMakeFiles/lmath.dir/flags.make
+CMakeFiles/lmath.dir/src/lmath.cpp.o: /home/hamza/Desktop/packages/prjct/src/lmath.cpp
+CMakeFiles/lmath.dir/src/lmath.cpp.o: CMakeFiles/lmath.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hamza/Desktop/packages/prjct/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lmath.dir/src/lmath.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lmath.dir/src/lmath.cpp.o -MF CMakeFiles/lmath.dir/src/lmath.cpp.o.d -o CMakeFiles/lmath.dir/src/lmath.cpp.o -c /home/hamza/Desktop/packages/prjct/src/lmath.cpp
 
-CMakeFiles/lmath.dir/src/Matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lmath.dir/src/Matrix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp > CMakeFiles/lmath.dir/src/Matrix.cpp.i
+CMakeFiles/lmath.dir/src/lmath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lmath.dir/src/lmath.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hamza/Desktop/packages/prjct/src/lmath.cpp > CMakeFiles/lmath.dir/src/lmath.cpp.i
 
-CMakeFiles/lmath.dir/src/Matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lmath.dir/src/Matrix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hamza/from-0/ML-DL-From-Scratch/lmath/src/Matrix.cpp -o CMakeFiles/lmath.dir/src/Matrix.cpp.s
+CMakeFiles/lmath.dir/src/lmath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lmath.dir/src/lmath.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hamza/Desktop/packages/prjct/src/lmath.cpp -o CMakeFiles/lmath.dir/src/lmath.cpp.s
 
 # Object files for target lmath
 lmath_OBJECTS = \
-"CMakeFiles/lmath.dir/src/Matrix.cpp.o"
+"CMakeFiles/lmath.dir/src/lmath.cpp.o"
 
 # External object files for target lmath
 lmath_EXTERNAL_OBJECTS =
 
-liblmath.a: CMakeFiles/lmath.dir/src/Matrix.cpp.o
+liblmath.a: CMakeFiles/lmath.dir/src/lmath.cpp.o
 liblmath.a: CMakeFiles/lmath.dir/build.make
 liblmath.a: CMakeFiles/lmath.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblmath.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hamza/Desktop/packages/prjct/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblmath.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lmath.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lmath.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/lmath.dir/clean:
 .PHONY : CMakeFiles/lmath.dir/clean
 
 CMakeFiles/lmath.dir/depend:
-	cd /home/hamza/from-0/ML-DL-From-Scratch/lmath/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamza/from-0/ML-DL-From-Scratch/lmath /home/hamza/from-0/ML-DL-From-Scratch/lmath /home/hamza/from-0/ML-DL-From-Scratch/lmath/build /home/hamza/from-0/ML-DL-From-Scratch/lmath/build /home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles/lmath.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hamza/Desktop/packages/prjct/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamza/Desktop/packages/prjct /home/hamza/Desktop/packages/prjct /home/hamza/Desktop/packages/prjct/build /home/hamza/Desktop/packages/prjct/build /home/hamza/Desktop/packages/prjct/build/CMakeFiles/lmath.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/lmath.dir/depend
 

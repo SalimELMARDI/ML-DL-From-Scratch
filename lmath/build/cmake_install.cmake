@@ -1,4 +1,4 @@
-# Install script for directory: /home/hamza/from-0/ML-DL-From-Scratch/lmath
+# Install script for directory: /home/hamza/Desktop/packages/prjct
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hamza/Desktop/packages/prjct/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

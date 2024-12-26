@@ -1,30 +1,26 @@
-#include "include/lmath.hpp"
-#include "include/Matrix.hpp"
-
+#include <vector>
 #include <iostream>
+#include <bits/stdc++.h>
+#include <omp.h>
+#include "include/lmath/lmath.hpp"
+
+
+
+
+
 
 
 using namespace std;
+using namespace lmath;
 
-
-lmath::Matrix get_ones(size_t n,size_t m=0)
-{
-        if(m==0)
-        {
-            return Matrix(n, n,1); 
-        }
-        return Matrix(n,m,1);
-        
-        
-}
 
 int main() {
-    lmath::Matrix  A=get_ones(5);
-    lmath::Matrix  B=get_ones(5);
+    Matrix A=get_ones(5,5);
+    Matrix B=get_ones(5,8);
     
     cout<<A*B<<endl;
     
-    lmath::Matrix C({1,2,3,4});
+    Matrix C({1,2,3,4});
     cout<<C<<endl;
     return 0;
 }

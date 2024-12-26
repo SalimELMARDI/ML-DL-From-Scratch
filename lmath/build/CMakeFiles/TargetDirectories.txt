@@ -1,3 +1,4 @@
-/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles/lmath.dir
-/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles/edit_cache.dir
-/home/hamza/from-0/ML-DL-From-Scratch/lmath/build/CMakeFiles/rebuild_cache.dir
+/home/hamza/Desktop/packages/prjct/build/CMakeFiles/lmath.dir
+/home/hamza/Desktop/packages/prjct/build/CMakeFiles/main.dir
+/home/hamza/Desktop/packages/prjct/build/CMakeFiles/edit_cache.dir
+/home/hamza/Desktop/packages/prjct/build/CMakeFiles/rebuild_cache.dir
